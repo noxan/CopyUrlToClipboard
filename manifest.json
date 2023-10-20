@@ -18,7 +18,10 @@
         "default": "Ctrl+Shift+X"
       },
       "description": "Copy the current tab's URL to the clipboard"
-    }
+  },
+  "background": {
+    "scripts": ["background_script.js"],
+    "type": "module"
   },
   "icons": {
     "16": "images/icon.png",
