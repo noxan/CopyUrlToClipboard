@@ -13,10 +13,9 @@
     }
   },
   "commands": {
-    "_execute_browser_action": {
+    "copy-url-to-clipboard": {
       "suggested_key": {
-        "default": "Ctrl+Shift+C",
-        "mac": "Command+Shift+C"
+        "default": "Ctrl+Shift+X"
       },
       "description": "Copy the current tab's URL to the clipboard"
     }
