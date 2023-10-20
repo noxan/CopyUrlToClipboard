@@ -28,5 +28,10 @@
     "16": "images/icon.png",
     "48": "images/icon.png",
     "128": "images/icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "copy-url-to-clipboard"
+    }
   }
 }
