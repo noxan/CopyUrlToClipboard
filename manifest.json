@@ -1,41 +1,29 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Copy URL to Clipboard",
   "description": "Copy the current tab's URL to the clipboard.",
   "version": "1.0.0",
-  "icons": {
-    "64": "icons/icon.png"
-  },
-  "background": {
-    "scripts": [
-      "background_script.js"
-    ]
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*.mozilla.org/*"
-      ],
-      "js": [
-        "content_script.js"
-      ]
+  "permissions": ["activeTab", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
     }
-  ],
-  "browser_action": {
-    "default_icon": {
-      "64": "icons/icon.png"
-    },
-    "default_popup": "browserAction/index.html",
-    "default_title": "UrlToClipboard"
   },
-  "page_action": {
-    "default_icon": {
-      "64": "icons/icon.png"
-    },
-    "default_popup": "pageAction/index.html",
-    "default_title": "UrlToClipboard"
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Copy the current tab's URL to the clipboard"
+    }
   },
-  "options_ui": {
-    "page": "options/index.html"
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
   }
 }
