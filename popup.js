@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Register a command listener to trigger the copyURL function with the keyboard shortcut
   browser.commands.onCommand.addListener(function (command) {
-    if (command === "_execute_browser_action") {
+    if (command === "copy-url-to-clipboard") {
       copyURL();
     }
   });
