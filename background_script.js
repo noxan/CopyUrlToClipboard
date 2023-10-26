@@ -16,3 +16,7 @@ browser.commands.onCommand.addListener(function (command) {
     copyURL();
   }
 });
+
+browser.action.onClicked.addListener(function () {
+  copyURL();
+});
