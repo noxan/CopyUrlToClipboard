@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Copy URL to Clipboard",
-  "description": "Copy the current tab's URL to the clipboard. Use the shortcut Ctrl+Shift+X (Cmd+Shift+X on macOS) or click the extension icon.",
+  "description": "Copy the current tab's URL to the clipboard. Use the shortcut Ctrl+Alt+C (Cmd+Ctrl+C on macOS) or click the extension icon.",
   "version": "1.0.0",
   "permissions": ["activeTab", "clipboardWrite"],
   "action": {
@@ -14,7 +14,8 @@
   "commands": {
     "copy-url-to-clipboard": {
       "suggested_key": {
-        "default": "Ctrl+Shift+X"
+        "default": "Ctrl+Alt+C",
+        "mac": "Command+MacCtrl+C"
       },
       "description": "Copy the current tab's URL to the clipboard"
     }
